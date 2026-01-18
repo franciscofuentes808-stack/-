@@ -5,46 +5,77 @@
   <title>Para ti 💜</title>
   <style>
     body {
-      background: linear-gradient(135deg, #1a1a1a, #6a0dad);
+      background: linear-gradient(135deg, #0f0f0f, #6a0dad);
       font-family: Arial, sans-serif;
       color: #f2e9ff;
       text-align: center;
       padding: 50px;
     }
     .card {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.65);
       padding: 30px;
       border-radius: 20px;
-      max-width: 500px;
+      max-width: 520px;
       margin: auto;
-      box-shadow: 0 0 20px rgba(186, 85, 211, 0.4);
+      box-shadow: 0 0 25px rgba(186, 85, 211, 0.5);
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2.6em;
       color: #d8b4ff;
+      margin-bottom: 10px;
     }
     p {
       font-size: 1.2em;
       line-height: 1.6;
     }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      background: #6a0dad;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(216, 180, 255, 0.6);
+    }
+    button:hover {
+      background: #7d2ae8;
+    }
+    #sorpresa {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #f3d9ff;
+    }
     .music {
-      margin-top: 25px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>Para ti 💜</h1>
+    <h1>Para ti, Amor 💜</h1>
+
     <p>
-      Hice este pequeño lugar solo para ti,  
-      porque a veces no alcanzan las palabras  
-      para decir lo importante que eres para mí.
+      Este pequeño rincón es solo para ti,  
+      porque desde que llegaste,  
+      todo tiene un poquito más de sentido.
     </p>
+
     <p>
-      Llegaste y todo cambió…  
-      y desde entonces, te elijo todos los días.
+      No importa el lugar ni el momento,  
+      si es contigo, siempre vale la pena.
     </p>
-    <p>🖤✨</p>
+
+    <button onclick="mostrarSorpresa()">Toca aquí 💫</button>
+
+    <div id="sorpresa">
+      <p>
+        Te elijo hoy, mañana y siempre.  
+        Gracias por ser mi lugar seguro. 🖤
+      </p>
+    </div>
 
     <div class="music">
       <p><strong>Escucha esto pensando en nosotros 🎶</strong></p>
@@ -56,6 +87,12 @@
       </iframe>
     </div>
   </div>
+
+  <script>
+    function mostrarSorpresa() {
+      document.getElementById("sorpresa").style.display = "block";
+    }
+  </script>
 </body>
 </html>
 
